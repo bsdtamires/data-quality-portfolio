@@ -1,0 +1,68 @@
+name: Data Quality CI
+
+on:
+  pull_request:
+    branches:
+      - main
+      - develop
+  push:
+    branches:
+      - main
+
+jobs:
+  dbt-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: |
+          pip install dbt-snowflake great-expectations pydantic
+      
+      - name: Run dbt tests
+        run: |
+          cd project_snowflake_dq/dbt
+          dbt test --select state:modified+ --state ./target
+        env:
+          DBT_PROFILES_DIR: ~/.dbt
+      
+  great-expectations:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        run: pip install great-expectations pydantic
+      
+      - name: Run Great Expectations checkpoints
+        run: |
+          cd project_snowflake_dq/great_expectations
+          great_expectations checkpoint run --checkpoint-name production_checkpoint
+
+  custom-tests:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Run custom Python tests
+        run: |
+          cd project_snowflake_dq/dbt/tests/custom
+          python -m pytest . -v

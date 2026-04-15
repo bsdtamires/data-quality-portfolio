@@ -1,0 +1,152 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv
+env
+ENV
+.env
+
+# pip
+.pip/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Poetry
+poetry.lock
+
+# Pipenv
+Pipfile.lock
+
+# dbt
+target/
+dbt_packages/
+dbt_project.yml.bak
+logs/
+
+# Great Expectations
+great_expectations/uncommitted/
+great_expectations/.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
+.settings/
+*.iml
+
+# Editor
+.vim
+.emacs
+*.ctags
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+.tmp
+
+# Local configuration
+.dbt/
+profiles.yml
+dbt_profiles.yml
+
+# Credentials & secrets
+.env
+.env.local
+.env.*.local
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.yml
+
+# Test coverage
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# pytest
+.pytest_cache/
+.pytest_tmp/
+
+# Snowflake specific
+profiles.yml
+*.snowflake
+snowflake_creds.py
+
+# Data files
+*.csv
+*.parquet
+*.json
+!dbt/seeds/*.csv  # Keep seed data
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Temporary files
+*.tmp
+tmp/
+temp/
+*.temp
+
+# Build artifacts
+*.dll
+*.exe
+*.o
+*.a
+*.dylib
+
+# Package managers
+node_modules/
+package-lock.json
+yarn.lock
+
+# Workflow artifacts
+.github/workflows/artifacts/
+workflow_runs/
+
+# Local notebooks
+local_*.ipynb
+scratch_*.py
