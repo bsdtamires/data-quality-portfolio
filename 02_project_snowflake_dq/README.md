@@ -8,7 +8,7 @@ Intended to be a comprehensive data quality framework for Snowflake-based analyt
 ## Project Structure
 Below a project structure designed as I instructed GitHub Copilot
 ```
-project_snowflake_dq/
+02_project_snowflake_dq/
 ├── dbt/
 │   ├── models/
 │   │   ├── staging/          # Raw data transformations with basic tests

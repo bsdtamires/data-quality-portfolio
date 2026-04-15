@@ -8,7 +8,7 @@ SQL+ AI-assisted test data and database-generated data quality framework for sys
 ## Project Structure
 TBD
 ```
-project01_SQL_Testing_AI_dq/
+01_project_sql_testing_AI_dq/
 ├── tests/
 │   ├── unit/              # Unit tests for individual data quality rules
 │   ├── integration/       # Integration tests across multiple data sources
