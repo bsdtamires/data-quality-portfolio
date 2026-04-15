@@ -6,7 +6,7 @@ A comprehensive portfolio showcasing modern approaches to data quality testing, 
 
 | Project | Description | Technologies | Status |
 |---------|-------------|--------------|--------|
-| [01_project_sql_testing_AI_dq](./01_project_sql_testing_AI_dq/README.md) | SQL+ AI-assisted test data & database-generated data quality framework | SQL, AI/LLM, Data Generation | 🚧 WIP |
+| [01_sql_dq_framework](./01_sql_dq_framework/README.md) | Pure SQL-based data quality framework with six-dimension validation checks | SQL, Database-agnostic | 🚧 WIP |
 | [02_project_snowflake_dq](./02_project_snowflake_dq/README.md) | Comprehensive Snowflake DQ framework with dbt, Great Expectations & custom tests | Snowflake, dbt, GE, Python | 🚧 WIP |
 | [03_project_dagster_ai_quality_pipeline](./03_project_dagster_ai_quality_pipeline/README.md) | Orchestrated DQ pipelines with AI-powered monitoring & intelligent alerting | Dagster, AI/ML, Orchestration | 🚧 WIP |
 | [04_project_LLM_output_quality_testing](./04_project_LLM_output_quality_testing/README.md) | DeepEval + PromptFlow + Snowflake for LLM output quality evaluation | DeepEval, PromptFlow, Snowflake, LLM | 🚧 WIP |
@@ -24,13 +24,13 @@ This portfolio demonstrates:
 ## 🚀 Quick Navigation
 
 ### Strategy by Technology
-- **SQL-Based Testing**: [01_project_sql_testing_AI_dq](./01_project_sql_testing_AI_dq/README.md)
+- **SQL-Based Testing**: [01_sql_dq_framework](./01_sql_dq_framework/README.md)
 - **dbt & Snowflake**: [02_project_snowflake_dq](./02_project_snowflake_dq/README.md)
 - **Orchestration**: [03_project_dagster_ai_quality_pipeline](./03_project_dagster_ai_quality_pipeline/README.md)
 - **LLM Evaluation**: [04_project_LLM_output_quality_testing](./04_project_LLM_output_quality_testing/README.md)
 
 ### By Use Case
-- **Traditional Data Quality**: [01_project_sql_testing_AI_dq](./01_project_sql_testing_AI_dq/README.md), [02_project_snowflake_dq](./02_project_snowflake_dq/README.md)
+- **Traditional Data Quality**: [01_sql_dq_framework](./01_sql_dq_framework/README.md), [02_project_snowflake_dq](./02_project_snowflake_dq/README.md)
 - **Pipeline Orchestration**: [03_project_dagster_ai_quality_pipeline](./03_project_dagster_ai_quality_pipeline/README.md)
 - **Generative AI Quality**: [04_project_LLM_output_quality_testing](./04_project_LLM_output_quality_testing/README.md)
 
@@ -66,7 +66,7 @@ Each project follows independent development patterns but shares a commitment to
 ## 📚 Documentation
 
 For detailed information about each project:
-- [SQL + AI Testing Framework](./01_project_sql_testing_AI_dq/README.md)
+- [SQL DQ Framework](./01_sql_dq_framework/README.md)
 - [Snowflake DQ with dbt & Great Expectations](./02_project_snowflake_dq/README.md)
 - [Dagster AI Quality Pipeline](./03_project_dagster_ai_quality_pipeline/README.md)
 - [LLM Output Quality Testing](./04_project_LLM_output_quality_testing/README.md)
