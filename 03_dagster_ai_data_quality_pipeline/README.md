@@ -9,7 +9,7 @@ Data quality orchestration with Dagster combined with AI-powered monitoring and 
 TBD
 
 ```
-03_project_dagster_ai_quality_pipeline/
+03_dagster_ai_data_quality_pipeline/
 ├── dagster_home/
 │   ├── assets/            # Dagster asset definitions for DQ checks
 │   ├── jobs/              # Orchestrated job definitions

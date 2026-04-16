@@ -8,7 +8,7 @@ Comprehensive quality testing framework for Large Language Models (LLMs) and gen
 ## Project Structure
 TBD
 ```
-04_project_LLM_output_quality_testing/
+04_llms_output_quality_testing/
 ├── promptflow/
 │   ├── flows/             # PromptFlow definitions and workflows
 │   ├── tools/             # Custom tools for LLM interactions
